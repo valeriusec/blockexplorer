@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ethereum Block Explorer Application
+
+This Ethereum Block Explorer Application is built using Next.js 14, Tailwind CSS, Shadcnui, and the Alchemy SDK for the Alchemy University. The purpose of this application is to allow users to explore blocks and transactions on the Ethereum Mainnet.
+
+## Features
+
+- Explore Ethereum Mainnet blocks
+- View detailed information about transactions on the Ethereum network
+- User-friendly interface for easy navigation through Ethereum data
 
 ## Getting Started
 
-First, run the development server:
+To run this application locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository to your local machine.
+2. Create a `.env` file at the root of the project with the following content:
+   ```
+   NEXT_PUBLIC_ALCHEMY_API_KEY=YOUR_ALCHEMY_API_KEY
+   ```
+   Replace `YOUR_ALCHEMY_API_KEY` with your personal Alchemy API key. (You can obtain it from the Alchemy Developer Dashboard after signing up at Alchemy University).
+   
+3. Install dependencies by running:
+   ```
+   npm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Start the development server:
+   ```
+   npm run dev
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+5. Access the application at `http://localhost:3000` in your web browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Dependencies
 
-## Learn More
+The key dependencies for this application include:
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js 14**: React framework for building the application.
+- **Tailwind CSS**: Utility-first CSS framework for styling the user interface.
+- **Shadcnui**: (Please provide a brief description or link if available, as it appears to be a custom or lesser-known library).
+- **Alchemy SDK**: Integration for accessing Ethereum data via Alchemy's API.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Upon running the application locally, you can access the Ethereum Block Explorer via your web browser. The application provides a user-friendly interface for exploring Ethereum Mainnet blocks and detailed transaction information.
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+We welcome contributions to enhance and improve this Ethereum Block Explorer application. Feel free to fork the repository and submit pull requests with any proposed changes.
